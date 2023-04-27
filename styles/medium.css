@@ -1,0 +1,15 @@
+@media screen and (max-width: 640px) {
+  header {
+    border-radius: 0 0 1rem 1rem;
+  }
+  header img {
+    width: 100px;
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
+  }
+  footer {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .assignments {
+    display: block;
+  }
+}

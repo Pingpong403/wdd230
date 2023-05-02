@@ -42,12 +42,12 @@ a {
     width: 100%;
     font-size: 1.5em;
     text-align: center;
-    background-color: rgb(181, 146, 59);
+    background-color: rgb(207, 163, 51);
     border-radius: 15px 15px 0 0;
 }
 
 .section-header h3 {
-    color: white;
+    color: black;
     font-size: 35px;
     margin: 0;
     padding: 10px;

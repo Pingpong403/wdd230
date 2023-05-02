@@ -6,7 +6,7 @@ body {
 
 header {
     width: 100%;
-    background-color: rgb(160, 130, 53);
+    background-color: rgb(160, 120, 19);
     color: white;
 }
 
@@ -42,7 +42,7 @@ a {
     width: 100%;
     font-size: 1.5em;
     text-align: center;
-    background-color: rgb(213, 172, 70);
+    background-color: rgb(181, 146, 59);
     border-radius: 15px 15px 0 0;
 }
 

@@ -1,0 +1,33 @@
+header, footer {
+    background-color: #562500;
+    color: #f0e7dd;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header ul {
+    background-color: #607196;
+    padding-inline-start: 0px;
+}
+
+header ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header ul li a:hover {
+    background-color: #ffebcd;
+    color: black;
+}

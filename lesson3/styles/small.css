@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #f0e7dd;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    width: 50%;
+}
+
+#design-table {
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+}
+
+#header-info {
+    font-size: 40px;
+}
+#header-sample {
+    background-color: #562500;
+    color: #f0e7dd;
+}
+
+#nav-info {
+    font-size: 30px;
+}
+#nav-sample {
+    background-color: #607196;
+    color: white;
+}
+
+#nav-hover-info {
+    font-size: 30px;
+}
+#nav-hover-sample {
+    background-color: #ffebcd;
+    color: black;
+}
+
+#heading-info {
+    font-size: 20px;
+}
+
+#para-info {
+    font-size: 16px;
+}
+
+#footer-info {
+    font-size: 13px;
+}
+#footer-sample {
+    background-color: #562500;
+    color: #f0e7dd;
+}
+
+/* Hamburger menu */
+#navbar {
+    display: none;
+}
+
+#navbar.active {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-open {
+    display: block;
+}
+
+#menu-open.active {
+    display: none;
+}
+
+#menu-close {
+    display: none;
+}
+
+#menu-close.active {
+    display: block;
+}

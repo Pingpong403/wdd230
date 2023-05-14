@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header, footer {
+    background-color: #562500;
+    color: #f0e7dd;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-top-bar {
+    display: flex;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: auto;
+}
+
+#social-header {
+    display: none;
+}
+
+/* Hamburger menu */
+#menu-button {
+    margin: 10px;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    background-color: #562500;
+    color: #f0e7dd;
+    border: 1px solid;
+}
+
+#navbar {
+    display: none;
+}
+
+#navbar.active {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-open {
+    display: block;
+}
+
+#menu-open.active {
+    display: none;
+}
+
+#menu-close {
+    display: none;
+}
+
+#menu-close.active {
+    display: block;
+}
+/* End hamburger menu */
+
+#current-date {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 90%;
+    margin: 13px 4px;
+    padding: 6px;
+    border: 1px solid #441e00;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0px;
+    font-size: 1rem;
+}
+
+header ul {
+    padding-inline-start: 0px;
+}
+
+header ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+header ul li a:hover {
+    color: black;
+    background-color: blanchedalmond;
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    background-color: #f0e7dd;
+}
+
+#cells {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    margin: 10px;
+    padding: 5px;
+    background-color: #e3d3c6;
+}
+
+.outer {
+    height: 90px;
+    border: 1px solid #562500;
+}
+
+#spotlights {
+    height: auto;
+}
+
+.inner {
+    height: 90px;
+    border: 1px solid #562500;
+}
+
+/* Footer */
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer h3 {
+    font-size: 17px;
+    margin: 10px 0px 5px 0px;
+}
+
+footer h4 {
+    margin: 0px 0px 20px 0px;
+}
+
+#social-footer a img {
+    margin: auto 10px;
+    width: 20px;
+}
+
+hr {
+    width: 90%;
+}
+
+footer h5 {
+    margin: 4px;
+}

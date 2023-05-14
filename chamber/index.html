@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Chamber of Commerce website for the city of Modesto.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/index.js" defer></script>
+    <title>Modesto Chamber</title>
+</head>
+<body>
+    <header>
+        <div id="header-top-bar">
+            <img src="./images/Modesto.png">
+            <h1>Modesto Chamber of Commerce</h1>
+            <div id="social-header">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./images/facebook.png" alt="Facebook logo">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="./images/linkedIn.png" alt="LinkedIn logo">
+                </a>
+            </div>
+            <button id="menu-button">
+                <span id="menu-open">&equiv;</span>
+                <span id="menu-close">X</span>
+            </button>
+        </div>
+        <div id="current-date">
+            <h2></h2>
+        </div>
+        <div id="header-bottom-bar">
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="cells">
+            <section class="outer" id="hero">Hero image and call to action</section>
+            <section class="outer" id="news">News</section>
+            <section class="outer" id="events">Event(s)</section>
+            <section class="outer" id="weather">Weather</section>
+            <section class="outer" id="join">Join</section>
+            <section class="outer" id="spotlights">
+                <section class="inner" id="spotlight1">Spotlight 1</section>
+                <section class="inner" id="spotlight2">Spotlight 2</section>
+                <section class="inner" id="spotlight3">Spotlight 3</section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img src="./images/Modesto.png">
+        <h3>Modesto Chamber of Commerce</h3>
+        <h4>123 G St. Modesto, CA 95355</h4>
+        <h4>networking@modchamb.org</h4>
+        <h4>+1 (209) 555 2348</h4>
+        <h4>&#127758; Location map</h4>
+        <div id="social-footer">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook.png" alt="Facebook logo">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="./images/linkedIn.png" alt="LinkedIn logo">
+            </a>
+        </div>
+        <hr>
+        <h5>&copy; <span id="currentyear"></span> Modesto Chamber</h5>
+        <h5>Josh Hamilton</h5>
+        <h5>WDD230 Project</h5>
+        <h5>Last modification: <span id="lastupdated"></span></h5>
+    </footer>
+</body>
+</html>

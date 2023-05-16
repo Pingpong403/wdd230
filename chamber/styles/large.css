@@ -7,6 +7,10 @@
         display: flex;
     }
 
+    #header-logo {
+        object-fit:cover;
+    }
+
     #social-header {
         display: flex;
         flex-direction: column;

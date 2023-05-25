@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -113,53 +117,80 @@ header ul li a {
 /* Main */
 
 main {
+    padding: 10px;
     background-color: #f0e7dd;
 }
 
 #cells {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 main section {
-    margin: 10px;
-    padding: 5px;
     background-color: #e3d3c6;
+    padding: 10px;
 }
 
 .outer {
-    height: 90px;
+    height: 350px;
     border: 1px solid #562500;
 }
 
+#join {
+    display: none;
+}
+
 #spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
     height: auto;
 }
 
+#spotlight3 {
+    display: none;
+}
+
 .inner {
-    height: 90px;
+    height: 250px;
     border: 1px solid #562500;
 }
 
 /* Footer */
 
 footer {
+    display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.footer-block {
     display: flex;
     flex-direction: column;
 }
 
 footer img {
     width: 80px;
+    margin: 0px auto;
 }
 
 footer h3 {
     font-size: 17px;
-    margin: 10px 0px 5px 0px;
+    margin: 10px auto 5px auto;
 }
 
 footer h4 {
-    margin: 0px 0px 20px 0px;
+    margin: 0px auto 20px auto;
+}
+
+footer a {
+    margin: 0px auto 0px auto;
+}
+
+#social-footer {
+    margin: auto;
 }
 
 #social-footer a img {
@@ -172,5 +203,14 @@ hr {
 }
 
 footer h5 {
-    margin: 4px;
+    margin: 4px auto;
+}
+
+.pipe {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f0e7dd;
 }

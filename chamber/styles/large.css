@@ -1,4 +1,13 @@
 @media screen and (min-width: 850px) {
+    html {
+        background-color: #f0e7dd;
+    }
+
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
     #menu-button {
         display: none;
     }
@@ -63,6 +72,7 @@
     }
 
     #spotlight3 {
+        display: block;
         grid-row: 3/4;
     }
 
@@ -83,6 +93,18 @@
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
+    }
+
+    footer h3 {
+        font-size: 25px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
+
+    footer h5 {
+        font-size: 17px;
     }
 
     #social-footer {

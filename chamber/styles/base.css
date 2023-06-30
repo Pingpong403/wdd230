@@ -149,7 +149,7 @@ main section {
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url("/chamber/images/mod-arch.jpeg");
+    background-image: url("./images/mod-arch.jpeg");
     background-size: cover;
     background-position: center;
     grid-row: 1/3;

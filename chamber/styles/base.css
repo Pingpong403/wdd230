@@ -25,8 +25,12 @@ header {
     display: flex;
 }
 
-header img {
+#header-logo  {
     width: 100px;
+}
+
+header img {
+    width: 100%;
 }
 
 header h1 {
@@ -121,11 +125,27 @@ main {
     background-color: #f0e7dd;
 }
 
-#cells {
+#discover-cell img[data-src] {
+    filter: blur(0.2em);
+}
+  
+#discover-cell img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#home-cells {
+    align-items: center;
+}
+
+.cells {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
 }
 
 main section {
@@ -136,6 +156,18 @@ main section {
 .outer {
     height: 250px;
     border: 1px solid #562500;
+}
+
+#demo-cell {
+    border: 1px solid #562500;
+}
+
+.discover-cell {
+    border: 1px solid #562500;
+}
+
+.discover-img {
+    width: 100%;
 }
 
 #hero {
@@ -294,9 +326,13 @@ footer {
     flex-direction: column;
 }
 
-footer img {
+#footer-logo {
     width: 80px;
     margin: 0px auto;
+}
+
+footer img {
+    width: 100%;
 }
 
 footer h3 {

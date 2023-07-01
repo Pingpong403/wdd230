@@ -12,15 +12,24 @@
         width: 95%;
     }
 
-    #cells {
+    #home-cells {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: auto auto auto auto auto;
-
     }
 
     .outer {
         height: auto;
+    }
+
+    .discover-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discover-img {
+        width: 80%;
     }
 
     #hero {
@@ -126,10 +135,10 @@
         align-items: center;
         display: grid;
         grid-template-areas: "img txt1"
-        "img txt2";
+                             "img txt2";
     }
     
-    #med1 img {
+    #footer-logo {
         width: 200px;
         grid-area: img;
     }
@@ -138,6 +147,7 @@
         margin: auto 0px 0px 0px;
         grid-area: txt1;
         align-self: end;
+        text-align: center;
     }
     #med1 h4 {
         grid-area: txt2;

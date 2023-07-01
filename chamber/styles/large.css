@@ -35,9 +35,13 @@
         flex-direction: row;
     }
 
-    #cells {
+    #home-cells {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto auto auto;
+    }
+
+    .discover-img {
+        width: 60%;
     }
 
     #events {

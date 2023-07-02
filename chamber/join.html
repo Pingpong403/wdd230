@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Chamber of Commerce website for the city of Modesto.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="icon" href="./favicon.ico">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <title>Modesto Chamber</title>
+</head>
+<body>
+    <header>
+        <div id="header-top-bar">
+            <a href="./index.html" id="header-logo"><img src="./images/Modesto.webp" alt="Logo"></a>
+            <h1>Modesto Chamber of Commerce</h1>
+            <div id="social-header">
+                <a href="https://www.facebook.com/ModestoChamber" target="_blank">
+                    <img src="./images/facebook2.png" alt="Facebook logo">
+                </a>
+                <a href="https://www.youtube.com/c/ModchamberOrg" target="_blank">
+                    <img src="./images/youtube2.png" alt="LinkedIn logo">
+                </a>
+            </div>
+            <button id="menu-button">
+                <span id="menu-open">&equiv;</span>
+                <span id="menu-close">X</span>
+            </button>
+        </div>
+        <div id="current-date">
+            <h2></h2>
+        </div>
+        <div id="header-bottom-bar">
+            <nav>
+                <ul id="navbar">
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Join the Chamber</h1>
+        <div id="join-and-info">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="name@domain.com" required></label>
+                    <label class="top">Cellphone Number* <input type="tel" name="cell" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business Name* <input type="text" name="business-name" required></label>
+                    <label class="top">Business Position Title <input type="text" name="business-position" pattern="[A-Za-z\- ]{7,}" title="Only letters, spaces, and hyphens; at least 7 characters."></label>
+                    <label class="top">Business Description <textarea placeholder="Tell us about your business..."></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div>Membership Level:</div>
+                    <label class="sbs"><input type="radio" name="membership" value="np" checked> Non-Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
+                </fieldset>
+                <input id="datetime" type="hidden" value="" name="date-and-time">
+                <input id="form-submit" type="submit" value="Join" class="submitBtn" name="submit">
+            </form>
+            <section id="perks" class="cells">
+                <h2>Each membership level has different perks:</h2>
+                <h3>Non-Profit (free)</h3>
+                <ul>
+                    <li>Free entry for up to 10 people in our monthly seminars</li>
+                    <li>A day of ad space on our home page every month</li>
+                    <li>Unlimited access for one representative to our leadership trainings</li>
+                </ul>
+                <h3>Bronze ($50/mo.)</h3>
+                <ul>
+                    <li>Free entry for up to 20 people in our monthly seminars</li>
+                    <li>Two days of ad space on our home page every month</li>
+                    <li>Unlimited access for two representatives to our leadership trainings</li>
+                    <li>A free tablet for every 5 people in your organization</li>
+                </ul>
+                <h3>Silver ($150/mo.)</h3>
+                <ul>
+                    <li>Free entry for up to 30 people in our monthly seminars</li>
+                    <li>Five days of ad space on our home page every month</li>
+                    <li>Unlimited access for three representatives to our leadership trainings</li>
+                    <li>A free tablet for every 4 people in your organization</li>
+                    <li>Low priority access to our venues for events</li>
+                </ul>
+                <h3>Gold ($300/mo.)</h3>
+                <ul>
+                    <li>Free entry for your entire organization in our monthly seminars</li>
+                    <li>A week of ad space on our home page every month</li>
+                    <li>Unlimited access for five representatives to our leadership trainings</li>
+                    <li>A free tablet for every person in your organization</li>
+                    <li>High priority access to our venues for events</li>
+                    <li>Special recognition on our website, at our seminars, and in the papers</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section id="med1" class="footer-block">
+            <a id="footer-logo" href="./index.html"><img src="./images/Modesto.webp" alt="Logo"></a>
+            <h3>Modesto Chamber of Commerce</h3>
+            <h4>1114 J Street, Modesto, CA 95354</h4>
+        </section>
+        <section id="med2" class="footer-block">
+            <h4>info@modchamber.org</h4>
+            <h4>(209) 577-5757</h4>
+            <a href="https://goo.gl/maps/B1peavGi3MtYJbJA8?coh=178571&entry=tt" target="_blank"><h4>&#127758; Location map</h4></a>
+        </section>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/ModestoChamber" target="_blank">
+                <img src="./images/facebook2.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.youtube.com/c/ModchamberOrg" target="_blank">
+                <img src="./images/youtube2.png" alt="LinkedIn logo">
+            </a>
+        </div>
+        <hr>
+        <section id="med3" class="footer-block">
+            <h5>&copy; <span id="currentyear"></span> Modesto Chamber</h5>
+            <h5 class="pipe"> | </h5>
+            <h5>Josh Hamilton</h5>
+            <h5 class="pipe"> | </h5>
+            <h5>WDD230 Project</h5>
+            <h5 class="pipe"> | </h5>
+            <h5>Last modification: <span id="lastupdated"></span></h5>
+        </section>
+    </footer>
+</body>
+</html>

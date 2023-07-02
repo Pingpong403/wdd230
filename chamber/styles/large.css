@@ -142,6 +142,28 @@
         font-size: 15px;
     }
 
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+
+    form label.top input, form label.top textarea, form label.top select {
+        max-width: 20rem;
+    }
+
+    form input.submitBtn {
+        max-width: 10rem;
+    }
+
+    #join-and-info {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    #perks {
+        margin-top: 8px;
+    }
+
     footer h3 {
         font-size: 25px;
     }

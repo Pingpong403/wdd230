@@ -1,8 +1,4 @@
 @media screen and (min-width: 850px) {
-    html {
-        background-color: #f0e7dd;
-    }
-
     body {
         max-width: 1400px;
         margin: 0 auto;

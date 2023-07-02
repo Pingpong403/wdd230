@@ -6,11 +6,26 @@
 
 html {
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #f0e7dd;
 }
 
 header, footer {
     background-color: #562500;
     color: #f0e7dd;
+}
+
+
+
+
+/* Announcement */
+#meet-n-greet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meet-n-greet p {
+    text-align: center;
 }
 
 

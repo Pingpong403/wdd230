@@ -1,3 +1,17 @@
+// Meet and greet
+/*
+<div id="meet-n-greet">
+    <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+</div>
+*/
+var n = new Date();
+var day = n.getDay();
+if (day === 1 || day === 2)
+{
+    var parent = document.querySelector("#meet-n-greet");
+    parent.innerHTML = "<p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>";
+}
+
 // Hamburger menu
 menuButton = document.querySelector("#menu-button");
 menuButton.addEventListener("click", () =>

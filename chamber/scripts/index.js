@@ -88,7 +88,16 @@ else
     timeElapsed /= 1000; // seconds
     timeElapsed /= 3600; // hours
     timeElapsed /= 24; // days
-    var message = `It has been ${Math.round(timeElapsed)} days since you last visited this site.`;
+    if (timeElapsed > 1)
+    {
+        var message = `It has been ${Math.round(timeElapsed)} days since you last visited this site.`;
+    }
+    else
+    {
+        var message = "You have visited this site today.";
+    }
+
+    localStorage.setItem("lastVisit", Date.now());
 }
 
 document.querySelector("#visits").innerHTML = message;

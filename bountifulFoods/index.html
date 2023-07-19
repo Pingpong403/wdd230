@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="icon" href="./favicon.ico">
     <script src="./scripts/hamburgerMenu.js" defer></script>
+    <script src="./scripts/fetchWeatherApi.js" defer></script>
+    <script src="./scripts/smoothiesData.js" defer></script>
     <script src="./scripts/getLastModified.js" defer></script>
     <title>Bountiful Foods - Home</title>
 </head>
@@ -35,7 +37,33 @@
         </nav>
     </header>
     <main>
-        
+        <section id="hero">
+            <img id="hero-img" src="./images/cherryFields.jpeg" alt="Fields">
+            <button id="hero-btn" onclick="location.href='./fresh.html'" type="button"><h1>Order Fresh</h1></button>
+        </section>
+        <section id="summary" class="padded-item">
+            <h1>Fertile Coasts</h1>
+            <p>
+                The coasts of Southern California have proven to be some of the Golden State's most fertile. This is best shown in the agriculture throughout and surrounding Ventura County. With more than half of the land being owned by farmers and ranchers, it's no wonder!
+            </p>
+        </section>
+        <section id="picture-links" class="padded-item">
+            <a href="./about.html"><img src="./images/apple.png" alt="Red apple"><h2>Learn</h2><h2>More</h2></a>
+            <a href="./fresh.html"><img src="./images/smoothie.png" alt="Fruit smoothie"><h2>Order</h2><h2>Fresh</h2></a>
+        </section>
+        <section id="weather-orders">
+            <aside id="weather">
+                <h2 id="temp"></h2>
+                <img id="conditions-icon" src="" alt="">
+                <figcaption></figcaption>
+                <h3 id="humidity"></h3>
+            </aside>
+            <aside id="orders">
+                <h2>You have ordered</h2>
+                <p id="num-orders"></p>
+                <h2>smoothies from us so far. <span id="custom-order-message"></span></h2>
+            </aside>
+        </section>
     </main>
     <footer>
         <section id="social">
@@ -47,14 +75,20 @@
             <img class="logo" src="./images/Bountiful.webp" alt="Logo">
         </a>
         <section id="resources">
-            <p class="p-heading">Attribution</p>
-            <a href="https://www.fruityvice.com/">Fruity Vice</a>
-            <a href="https://openweathermap.org/">Open Weather Map</a>
+            <span>
+                <p class="p-heading">Attribution</p>
+                <a href="https://www.fruityvice.com/" target="_blank">Fruity Vice</a>
+                <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a>
+            </span>
+            <img src="./images/blob.png">
         </section>
         <section id="contact-footer">
-            <p class="p-heading">Contact Us</p>
-            <p>(760) 518 3904</p>
-            <p>info@bountifulfoods.com</p>
+            <span>
+                <p class="p-heading">Contact Us</p>
+                <p>(760) 518 3904</p>
+                <p>info@bountifulfoods.com</p>
+            </span>
+            <img src="./images/blob.png">
         </section>
         <p>Last modified: <span id="last-modified-date"></span></p>
     </footer>

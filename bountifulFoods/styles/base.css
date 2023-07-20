@@ -308,6 +308,30 @@ form p {
     text-align: center;
 }
 
+/* About Page */
+#about-details {
+    margin: 10px;
+}
+
+#about-details img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#location-section {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#location-section p {
+    font-size: 1.2rem;
+}
+
+#location-section img {
+    width: 20%;
+}
+
 
 
 

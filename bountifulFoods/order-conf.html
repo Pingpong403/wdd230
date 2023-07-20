@@ -29,9 +29,9 @@
         </button>
         <nav>
             <ul id="navbar">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./fresh.html">Fresh</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li id="index-link"><a href="./index.html">Home</a></li>
+                <li id="fresh-link"><a href="./fresh.html">Fresh</a></li>
+                <li id="about-link"><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -40,30 +40,30 @@
         <section class="conf-card">
             <h3>We just want to confirm:</h3>
             <section class="conf-grid">
-                <p>First name:</p>
+                <p class="left-label">First name:</p>
                 <p id="yourname"></p>
-                <p>Email:</p>
+                <p class="left-label">Email:</p>
                 <p id="youremail"></p>
-                <p>Cell:</p>
+                <p class="left-label">Cell:</p>
                 <p id="yourcell"></p>
-                <p>Selected fruit:</p>
+                <p class="left-label">Selected fruit:</p>
                 <ul id="yourfruits"></ul>
-                <p>Special instructions:</p>
+                <p class="left-label">Special instructions:</p>
                 <p id="yourinstructions"></p>
             </section>
         </section>
         <section class="conf-card">
             <h3>Your Smoothie's Nutrition Facts:</h3>
             <section class="conf-grid">
-                <p>Carbohydrates:</p>
+                <p class="left-label">Carbohydrates:</p>
                 <p id="yourcarbs"></p>
-                <p>Protein:</p>
+                <p class="left-label">Protein:</p>
                 <p id="yourprotein"></p>
-                <p>Fat:</p>
+                <p class="left-label">Fat:</p>
                 <p id="yourfat"></p>
-                <p>Sugar:</p>
+                <p class="left-label">Sugar:</p>
                 <p id="yoursugar"></p>
-                <p>Calories:</p>
+                <p class="left-label">Calories:</p>
                 <p id="yourcalories"></p>
             </section>
         </section>
@@ -72,7 +72,7 @@
             <p class="padded-item">If you experience any issues, you can contact our 24/7 support team at support@bountifulfoods.com</p>
             <p class="padded-item">Order started on <span id="ordered-on"></span></p>
         </section>
-        <button id="confirm-order" type="button"onclick="location.href='./index.html'" >Looks Good!</button>
+        <button id="confirm-order" type="button"onclick="location.href='./index.html'">Looks Good!</button>
         <p id="review-request">Write a review?</p>
     </main>
     <footer>

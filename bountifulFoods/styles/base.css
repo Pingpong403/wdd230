@@ -9,6 +9,18 @@ body {
     font-size: 1.2rem;
 }
 
+.page-title {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.page-desc {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
 
 
 /* HEADER */
@@ -194,11 +206,106 @@ main {
     background-color: white;
     border: 1px solid gray;
     text-align: center;
+    border-radius: 10px;
 }
 
 #num-orders {
     font-size: 2rem;
     color: rgb(176, 41, 0);
+}
+
+/* Form */
+form fieldset {
+    margin: 0 10px 30px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    background-color: #e5ffc4;
+}
+
+form legend {
+    margin: 0 10px;
+    padding: 0 5px;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+form label.top input, form label.top textarea, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: black;
+    width: 100%;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #7CD855;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 10px;
+    width: 96%;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    background-color: #FFCCCC;
+}
+
+form label.top input:required:valid {
+    background-color: white;
+}
+
+form p {
+    margin: 10px;
+}
+
+/* Order confirmation */
+.conf-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e5ffc4;
+}
+
+.conf-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#more-info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+#confirm-order {
+    border: none;
+    background-color: #7CD855;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 10px;
+    width: 96%;
+    cursor: pointer;
+}
+
+#review-request {
+    text-align: center;
 }
 
 

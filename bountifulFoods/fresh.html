@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="icon" href="./favicon.ico">
     <script src="./scripts/hamburgerMenu.js" defer></script>
+    <script type="module" src="./scripts/populateFruit.js" defer></script>
+    <script src="./scripts/onOrder.js" defer></script>
     <script src="./scripts/getLastModified.js" defer></script>
     <title>Bountiful Foods - Order Fresh</title>
 </head>
@@ -35,7 +37,32 @@
         </nav>
     </header>
     <main>
-        
+        <h1 class="page-title">Order a Fresh Fruit Smoothie</h1>
+        <h3 class="page-desc">You can choose between 3 fruit we have available at the moment, or mix and match!</h3>
+        <form method="get" action="order-conf.html">
+            <fieldset>
+                <legend>Your Info</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Email* <input type="email" name="email" required></label>
+                <label class="top">Cellphone Number* <input type="tel" name="cell" required></label>
+                <p>Your receipt will be sent to this email. We will text you when your order is ready to be picked up!</p>
+            </fieldset>
+            <fieldset>
+                <legend>Choose Your Fruit</legend>
+                <p>Available fruit (select 1-3 options):</p>
+                <label id="fruit1" class="sbs"><input type="checkbox" id="f1" name="f1" value=""></label>
+                <label id="fruit2" class="sbs"><input type="checkbox" id="f2" name="f2" value=""></label>
+                <label id="fruit3" class="sbs"><input type="checkbox" id="f3" name="f3" value=""></label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                <div>Special Instructions</div>
+                <label class="top"><textarea name="sp-instr" placeholder="Allergens, special deliveries, etc."></textarea></label>
+            </fieldset>
+            <input id="datetime" type="hidden" value="" name="date-and-time">
+            <input id="form-submit" type="submit" value="Start Blending" class="submitBtn" name="submit">
+            <p>*NOTE: payment will be collected upon pickup.</p>
+        </form>
     </main>
     <footer>
         <section id="social">

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="icon" href="./favicon.ico">
     <script src="./scripts/hamburgerMenu.js" defer></script>
+    <script type="module" src="./scripts/orderConf.js" defer></script>
     <script src="./scripts/getLastModified.js" defer></script>
     <title>Document</title>
 </head>
@@ -35,7 +36,44 @@
         </nav>
     </header>
     <main>
-        
+        <h2 class="page-title">Thank you for your order!</h2>
+        <section class="conf-card">
+            <h3>We just want to confirm:</h3>
+            <section class="conf-grid">
+                <p>First name:</p>
+                <p id="yourname"></p>
+                <p>Email:</p>
+                <p id="youremail"></p>
+                <p>Cell:</p>
+                <p id="yourcell"></p>
+                <p>Selected fruit:</p>
+                <ul id="yourfruits"></ul>
+                <p>Special instructions:</p>
+                <p id="yourinstructions"></p>
+            </section>
+        </section>
+        <section class="conf-card">
+            <h3>Your Smoothie's Nutrition Facts:</h3>
+            <section class="conf-grid">
+                <p>Carbohydrates:</p>
+                <p id="yourcarbs"></p>
+                <p>Protein:</p>
+                <p id="yourprotein"></p>
+                <p>Fat:</p>
+                <p id="yourfat"></p>
+                <p>Sugar:</p>
+                <p id="yoursugar"></p>
+                <p>Calories:</p>
+                <p id="yourcalories"></p>
+            </section>
+        </section>
+        <section id="more-info">
+            <p class="padded-item">You can expect to pick up your smoothie at <span id="pickup-time"></span></p>
+            <p class="padded-item">If you experience any issues, you can contact our 24/7 support team at support@bountifulfoods.com</p>
+            <p class="padded-item">Order started on <span id="ordered-on"></span></p>
+        </section>
+        <button id="confirm-order" type="button"onclick="location.href='./index.html'" >Looks Good!</button>
+        <p id="review-request">Write a review?</p>
     </main>
     <footer>
         <section id="social">
